@@ -1,0 +1,38 @@
+{
+  "name": "hot-reloader-error-recovery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "jspm": {
+    "name": "hot-reloader-error-recovery",
+    "main": "hot-reloader-error-recovery.js",
+    "dependencies": {},
+    "devDependencies": {
+      "babel-plugin-transform-react-jsx": "npm:babel-plugin-transform-react-jsx@^6.23.0",
+      "fs": "npm:jspm-nodelibs-fs@^0.2.0",
+      "path": "npm:jspm-nodelibs-path@^0.2.0",
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.21",
+      "process": "npm:jspm-nodelibs-process@^0.2.0",
+      "systemjs-hot-reloader": "npm:systemjs-hot-reloader@^1.1.0"
+    },
+    "overrides": {
+      "npm:lodash@4.17.4": {
+        "map": {
+          "buffer": "@empty",
+          "process": "@empty"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve & chokidar-socket-emitter",
+    "install": "jspm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "jspm": "^0.17.0-beta.41"
+  }
+}
